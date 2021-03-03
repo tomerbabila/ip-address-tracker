@@ -10,3 +10,7 @@
   background-size: 100% 100%;
   background-color: #cccccc;
 }
+
+.map-container {
+  height: calc(2 * (100vh / 3));
+}
