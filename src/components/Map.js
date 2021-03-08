@@ -4,7 +4,8 @@ import 'leaflet/dist/leaflet.css';
 
 function Map() {
   return (
-    <MapContainer className='map-container' center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
+    <div className='map-container'>
+    <MapContainer className='map' center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
@@ -13,6 +14,7 @@ function Map() {
         <Popup>Hello popup</Popup>
       </Marker>
     </MapContainer>
+    </div>
   );
 }
 
