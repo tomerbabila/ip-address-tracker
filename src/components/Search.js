@@ -1,11 +1,13 @@
 import React from 'react';
-import Result from './Result';
+import Results from './Results';
+import Input from './Input';
 
 function Search() {
   return (
     <div className='search-container'>
       <h1>IP Address Tracker</h1>
-      <Result />
+      <Input />
+      <Results />
     </div>
   );
 }
